@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Health Record | Leoj Gabriel B. Malaluan</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     TOP HEADER
+===================================================== -->
+
+<header class="topbar">
+
+    <div class="hospital-brand">
+
+        <div class="hospital-icon">
+            <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+
+        <div>
+
+            <h2>PERSONAL HEALTH RECORD</h2>
+
+            <span>
+                Digital Patient Information System
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="record-status">
+
+        <span class="status-dot"></span>
+
+        RECORD ACTIVE
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN CONTAINER
+===================================================== -->
+
+<main class="container">
+
+
+<!-- =====================================================
+     PATIENT HEADER
+===================================================== -->
+
+<section class="patient-header">
+
+
+    <div class="patient-photo">
+
+        <!-- YOUR PATIENT PHOTO -->
+
+        <img src="images/patient.jpg"
+             alt="Leoj Gabriel B. Malaluan">
+
+        <span>
+            PATIENT
+        </span>
+
+    </div>
+
+
+    <div class="patient-information">
+
+        <small>
+            PATIENT RECORD
+        </small>
+
+        <h1>
+            Leoj Gabriel B. Malaluan
+        </h1>
+
+
+        <div class="patient-details">
+
+            <div>
+
+                <i class="fa-solid fa-id-card"></i>
+
+                <span>
+                    Patient No. 2004-0911
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-calendar"></i>
+
+                <span>
+                    DOB: September 11, 2004
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>
+                    Age: 22
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-record">
+
+        <span>
+            STATUS
+        </span>
+
+        <strong>
+            STABLE
+        </strong>
+
+        <small>
+            2026
+        </small>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav class="tabs">
+
+
+    <button class="tab-button active"
+            onclick="openTab('patient', this)">
+
+        <i class="fa-solid fa-user-injured"></i>
+
+        Patient
+
+    </button>
+
+
+    <button class="tab-button"
+            onclick="openTab('diagnosis', this)">
+
+        <i class="fa-solid fa-stethoscope"></i>
+
+        Diagnosis
+
+    </button>
+
+
+    <button class="tab-button"
+            onclick="openTab('travel', this)">
+
+        <i class="fa-solid fa-plane"></i>
+
+        Travel History
+
+    </button>
+
+
+    <button class="tab-button"
+            onclick="openTab('creative', this)">
+
+        <i class="fa-solid fa-camera"></i>
+
+        Creative Profile
+
+    </button>
+
+
+    <button class="tab-button"
+            onclick="openTab('surgeon', this)">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        Surgeon
+
+    </button>
+
+
+</nav>
+
+
+
+<!-- =====================================================
+     PATIENT TAB
+===================================================== -->
+
+<section id="patient"
+         class="tab-content active">
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                01 / PATIENT PROFILE
+            </span>
+
+            <h2>
+                Patient Overview
+            </h2>
+
+        </div>
+
+        <i class="fa-solid fa-file-medical"></i>
+
+    </div>
+
+
+
+    <div class="medical-card">
+
+        <div class="card-heading">
+
+            <h3>
+
+                <i class="fa-solid fa-notes-medical"></i>
+
+                Chief Complaint
+
+            </h3>
+
+            <span class="badge">
+                PERSONAL
+            </span>
+
+        </div>
+
+
+        <p class="highlight-text">
+
+            "A strong desire to explore, create,
+            document, and experience the world."
+
+        </p>
+
+
+        <p>
+
+            Patient demonstrates a strong interest in
+            travelling, photography, visual arts,
+            graphic design, and dance. These interests
+            have become important parts of the patient's
+            identity and everyday life.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- PATIENT MUSIC -->
+
+    <div class="medical-card">
+
+        <div class="card-heading">
+
+            <h3>
+
+                <i class="fa-solid fa-music"></i>
+
+                Patient Soundtrack
+
+            </h3>
+
+            <span class="badge">
+                AUDIO
+            </span>
+
+        </div>
+
+
+        <p>
+            Personal soundtrack associated with the patient.
+        </p>
+
+
+        <audio controls>
+
+            <source src="audio/patient-song.mp3"
+                    type="audio/mpeg">
+
+            Your browser does not support audio.
+
+        </audio>
+
+    </div>
+
+
+
+    <!-- QUICK FACTS -->
+
+    <div class="quick-grid">
+
+
+        <div class="quick-card">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <div>
+
+                <span>
+                    EDUCATION
+                </span>
+
+                <strong>
+                    4th Year Nursing Student
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <i class="fa-solid fa-plane-departure"></i>
+
+            <div>
+
+                <span>
+                    TRAVEL
+                </span>
+
+                <strong>
+                    Local & International
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <i class="fa-solid fa-palette"></i>
+
+            <div>
+
+                <span>
+                    CREATIVE
+                </span>
+
+                <strong>
+                    Arts & Design
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <i class="fa-solid fa-scalpel"></i>
+
+            <div>
+
+                <span>
+                    ASPIRATION
+                </span>
+
+                <strong>
+                    Future Surgeon
+                </strong>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DIAGNOSIS TAB
+===================================================== -->
+
+<section id="diagnosis"
+         class="tab-content">
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                02 / CLINICAL ASSESSMENT
+            </span>
+
+            <h2>
+                Diagnosis
+            </h2>
+
+        </div>
+
+        <i class="fa-solid fa-stethoscope"></i>
+
+    </div>
+
+
+
+    <div class="diagnosis-grid">
+
+
+        <article class="diagnosis-card">
+
+            <div class="diagnosis-icon">
+
+                <i class="fa-solid fa-plane-departure"></i>
+
+            </div>
+
+
+            <div>
+
+                <span class="diagnosis-code">
+                    DX-001
+                </span>
+
+                <h3>
+                    Chronic Wanderlust
+                </h3>
+
+                <p>
+                    Persistent desire to discover
+                    destinations, cultures, food,
+                    and new experiences.
+                </p>
+
+                <small>
+                    CONDITION: ACTIVE
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="diagnosis-card">
+
+            <div class="diagnosis-icon">
+
+                <i class="fa-solid fa-camera"></i>
+
+            </div>
+
+
+            <div>
+
+                <span class="diagnosis-code">
+                    DX-002
+                </span>
+
+                <h3>
+                    Photographic Instinct
+                </h3>
+
+                <p>
+                    Frequent tendency to capture
+                    moments, places, people,
+                    and stories through photography.
+                </p>
+
+                <small>
+                    CONDITION: ACTIVE
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="diagnosis-card">
+
+            <div class="diagnosis-icon">
+
+                <i class="fa-solid fa-palette"></i>
+
+            </div>
+
+
+            <div>
+
+                <span class="diagnosis-code">
+                    DX-003
+                </span>
+
+                <h3>
+                    Creative Hyperactivity
+                </h3>
+
+                <p>
+                    Continuous engagement in
+                    illustration, design,
+                    and visual creativity.
+                </p>
+
+                <small>
+                    CONDITION: ACTIVE
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="diagnosis-card">
+
+            <div class="diagnosis-icon">
+
+                <i class="fa-solid fa-music"></i>
+
+            </div>
+
+
+            <div>
+
+                <span class="diagnosis-code">
+                    DX-004
+                </span>
+
+                <h3>
+                    Rhythmic Compulsion
+                </h3>
+
+                <p>
+                    Strong inclination toward
+                    movement, choreography,
+                    music, and dance.
+                </p>
+
+                <small>
+                    CONDITION: ACTIVE
+                </small>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+
+    <div class="medical-card">
+
+        <div class="card-heading">
+
+            <h3>
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                Clinical Impression
+
+            </h3>
+
+        </div>
+
+
+        <p>
+
+            Patient presents with a multidimensional
+            personality characterized by curiosity,
+            creativity, artistic expression,
+            and enthusiasm for exploration.
+
+        </p>
+
+
+        <div class="progress-area">
+
+
+            <div class="progress-label">
+
+                <span>
+                    Curiosity
+                </span>
+
+                <strong>
+                    95%
+                </strong>
+
+            </div>
+
+
+            <div class="progress">
+
+                <div style="width:95%"></div>
+
+            </div>
+
+
+
+            <div class="progress-label">
+
+                <span>
+                    Creativity
+                </span>
+
+                <strong>
+                    92%
+                </strong>
+
+            </div>
+
+
+            <div class="progress">
+
+                <div style="width:92%"></div>
+
+            </div>
+
+
+
+            <div class="progress-label">
+
+                <span>
+                    Adventure
+                </span>
+
+                <strong>
+                    90%
+                </strong>
+
+            </div>
+
+
+            <div class="progress">
+
+                <div style="width:90%"></div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TRAVEL HISTORY
+===================================================== -->
+
+<section id="travel"
+         class="tab-content">
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                03 / PATIENT HISTORY
+            </span>
+
+            <h2>
+                Travel History
+            </h2>
+
+        </div>
+
+        <i class="fa-solid fa-route"></i>
+
+    </div>
+
+
+
+    <div class="history-note">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <p>
+
+            Patient has an extensive travel history
+            including multiple destinations throughout
+            the Philippines and several international
+            destinations.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- LOCAL TRAVEL -->
+
+    <h3 class="subheading">
+
+        <i class="fa-solid fa-map-location-dot"></i>
+
+        Local Travel
+
+    </h3>
+
+
+    <div class="photo-grid">
+
+
+        <article class="travel-card">
+
+            <img src="images/boracay.jpg"
+                 alt="Boracay">
+
+            <div class="photo-caption">
+
+                <span>
+                    PHILIPPINES
+                </span>
+
+                <h3>
+                    Boracay
+                </h3>
+
+                <p>
+                    Beach • Exploration • Memories
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="travel-card">
+
+            <img src="images/bohol.jpg"
+                 alt="Bohol">
+
+            <div class="photo-caption">
+
+                <span>
+                    PHILIPPINES
+                </span>
+
+                <h3>
+                    Bohol
+                </h3>
+
+                <p>
+                    Nature • Culture • Adventure
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="travel-card">
+
+            <img src="images/ilocos.jpg"
+                 alt="Ilocos">
+
+            <div class="photo-caption">
+
+                <span>
+                    PHILIPPINES
+                </span>
+
+                <h3>
+                    Ilocos
+                </h3>
+
+                <p>
+                    Heritage • Food • Exploration
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="travel-card add-card">
+
+            <div>
+
+                <i class="fa-solid fa-plus"></i>
+
+                <h3>
+                    More Local Trips
+                </h3>
+
+                <p>
+                    Add more destinations
+                    as your travel history grows.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+
+    <!-- INTERNATIONAL TRAVEL -->
+
+    <h3 class="subheading international-heading">
+
+        <i class="fa-solid fa-earth-asia"></i>
+
+        International Travel
+
+    </h3>
+
+
+    <div class="photo-grid">
+
+
+        <article class="travel-card">
+
+            <img src="images/korea.jpg"
+                 alt="South Korea">
+
+            <div class="photo-caption">
+
+                <span>
+                    INTERNATIONAL
+                </span>
+
+                <h3>
+                    South Korea
+                </h3>
+
+                <p>
+                    Culture • Food • City Life
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="travel-card">
+
+            <img src="images/singapore.jpg"
+                 alt="Singapore">
+
+            <div class="photo-caption">
+
+                <span>
+                    INTERNATIONAL
+                </span>
+
+                <h3>
+                    Singapore
+                </h3>
+
+                <p>
+                    Architecture • Food • Exploration
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="travel-card">
+
+            <img src="images/malaysia.jpg"
+                 alt="Malaysia">
+
+            <div class="photo-caption">
+
+                <span>
+                    INTERNATIONAL
+                </span>
+
+                <h3>
+                    Malaysia
+                </h3>
+
+                <p>
+                    Culture • Food • Adventure
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CREATIVE PROFILE
+===================================================== -->
+
+<section id="creative"
+         class="tab-content">
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                04 / FUNCTIONAL ASSESSMENT
+            </span>
+
+            <h2>
+                Creative Profile
+            </h2>
+
+        </div>
+
+        <i class="fa-solid fa-brain"></i>
+
+    </div>
+
+
+
+    <div class="history-note">
+
+        <i class="fa-solid fa-lightbulb"></i>
+
+        <p>
+
+            Patient demonstrates multiple creative
+            competencies involving photography,
+            illustration, visual design, and dance.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- CREATIVE GALLERY -->
+
+    <div class="creative-gallery">
+
+
+        <!-- PHOTOGRAPHER -->
+
+        <article class="creative-card">
+
+            <img src="images/photographer.jpg"
+                 alt="Leoj as a photographer">
+
+            <div class="creative-overlay">
+
+                <span>
+                    CREATIVE FINDING 01
+                </span>
+
+                <h3>
+                    Photographer
+                </h3>
+
+                <p>
+                    Capturing places, people,
+                    details, and moments.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ILLUSTRATOR -->
+
+        <article class="creative-card">
+
+            <img src="images/illustrator.jpg"
+                 alt="Leoj as an illustrator">
+
+            <div class="creative-overlay">
+
+                <span>
+                    CREATIVE FINDING 02
+                </span>
+
+                <h3>
+                    Illustrator
+                </h3>
+
+                <p>
+                    Expressing ideas and stories
+                    through visual art.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- LAYOUT ARTIST -->
+
+        <article class="creative-card">
+
+            <img src="images/layout.jpg"
+                 alt="Leoj as a layout artist">
+
+            <div class="creative-overlay">
+
+                <span>
+                    CREATIVE FINDING 03
+                </span>
+
+                <h3>
+                    Layout Artist
+                </h3>
+
+                <p>
+                    Creating visual compositions,
+                    posters, and digital layouts.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- DANCER -->
+
+        <article class="creative-card">
+
+            <img src="images/dancer.jpg"
+                 alt="Leoj dancing">
+
+            <div class="creative-overlay">
+
+                <span>
+                    CREATIVE FINDING 04
+                </span>
+
+                <h3>
+                    Dancer
+                </h3>
+
+                <p>
+                    Movement, rhythm, and
+                    self-expression.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+
+    <div class="medical-card creative-assessment">
+
+        <div class="card-heading">
+
+            <h3>
+
+                <i class="fa-solid fa-user-check"></i>
+
+                Functional Assessment
+
+            </h3>
+
+            <span class="badge">
+                POSITIVE
+            </span>
+
+        </div>
+
+
+        <p>
+
+            Patient demonstrates strong creative
+            functioning across visual arts,
+            photography, graphic design,
+            and performing arts.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SURGEON
+===================================================== -->
+
+<section id="surgeon"
+         class="tab-content">
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                05 / CARE PROVIDER
+            </span>
+
+            <h2>
+                The Surgeon
+            </h2>
+
+        </div>
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+    </div>
+
+
+
+    <!-- SURGEON PROFILE -->
+
+    <div class="surgeon-profile">
+
+
+        <div class="surgeon-photo">
+
+            <img src="images/surgeon.jpg"
+                 alt="Leoj Gabriel B. Malaluan">
+
+            <div class="future-badge">
+
+                <i class="fa-solid fa-star"></i>
+
+                FUTURE SURGEON
+
+            </div>
+
+        </div>
+
+
+
+        <div class="surgeon-info">
+
+            <small>
+                CARE PROVIDER PROFILE
+            </small>
+
+            <h1>
+                Leoj Gabriel B. Malaluan
+            </h1>
+
+            <p class="surgeon-role">
+
+                4th Year Nursing Student
+                <br>
+                Aspiring Surgeon
+
+            </p>
+
+
+
+            <div class="surgeon-details">
+
+
+                <div>
+
+                    <i class="fa-solid fa-cake-candles"></i>
+
+                    <section>
+
+                        <strong>
+                            Birthday
+                        </strong>
+
+                        <span>
+                            September 11, 2004
+                        </span>
+
+                    </section>
+
+                </div>
+
+
+
+                <div>
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <section>
+
+                        <strong>
+                            Age
+                        </strong>
+
+                        <span>
+                            22 years old
+                        </span>
+
+                    </section>
+
+                </div>
+
+
+
+                <div>
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <section>
+
+                        <strong>
+                            Education
+                        </strong>
+
+                        <span>
+                            Senior Nursing Student
+                        </span>
+
+                    </section>
+
+                </div>
+
+
+
+                <div>
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                    <section>
+
+                        <strong>
+                            Special Interest
+                        </strong>
+
+                        <span>
+                            Operating Room
+                        </span>
+
+                    </section>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- PROFESSIONAL STATEMENT -->
+
+    <div class="medical-card surgeon-statement">
+
+
+        <div class="card-heading">
+
+            <h3>
+
+                <i class="fa-solid fa-user-doctor"></i>
+
+                Professional Statement
+
+            </h3>
+
+            <span class="badge">
+                ASPIRATION
+            </span>
+
+        </div>
+
+
+        <p class="highlight-text">
+
+            "Lagi't lagi para sa Bayan."
+
+        </p>
+
+
+        <p>
+
+            As a  nursing student, I have developed a strong interest in surgical
+            nursing.
+            The long-term aspiration is to pursue medicine
+            and become a surgeon.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- OPERATING ROOM -->
+
+    <div class="or-card">
+
+
+        <div class="or-icon">
+
+            <i class="fa-solid fa-scalpel"></i>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                FUTURE SPECIALIZATION
+            </span>
+
+            <h2>
+                Operating Room
+            </h2>
+
+            <p>
+                Where preparation, precision,
+                teamwork, and patient care meet.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SURGEON SOUNDTRACK -->
+
+    <div class="medical-card">
+
+
+        <div class="card-heading">
+
+            <h3>
+
+                <i class="fa-solid fa-music"></i>
+
+                Surgeon Soundtrack
+
+            </h3>
+
+            <span class="badge">
+                OR MODE
+            </span>
+
+        </div>
+
+
+        <p>
+            Soundtrack for the future surgeon.
+        </p>
+
+
+        <audio controls>
+
+            <source src="audio/surgeon-theme.mp3"
+                    type="audio/mpeg">
+
+            Your browser does not support audio.
+
+        </audio>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div>
+
+        <strong>
+            PERSONAL HEALTH RECORD
+        </strong>
+
+        <p>
+            A student web development project.
+        </p>
+
+    </div>
+
+
+    <div class="footer-right">
+
+        <span>
+            RECORD STATUS: ACTIVE
+        </span>
+
+        <span>
+            © 2026 Leoj Gabriel B. Malaluan
+        </span>
+
+    </div>
+
+
+</footer>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     PHOTO LIGHTBOX
+===================================================== -->
+
+<div id="photoLightbox"
+     class="lightbox">
+
+
+    <button class="lightbox-close"
+            onclick="closeLightbox()">
+
+        &times;
+
+    </button>
+
+
+    <img id="lightboxImage"
+         src=""
+         alt="Expanded photo">
+
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   TAB NAVIGATION
+===================================================== */
+
+function openTab(tabName, clickedButton) {
+
+
+    /*
+       Hide all sections
+    */
+
+    const contents =
+        document.querySelectorAll(".tab-content");
+
+
+    contents.forEach(function(section) {
+
+        section.classList.remove("active");
+
+    });
+
+
+
+    /*
+       Remove active state
+       from navigation buttons
+    */
+
+    const buttons =
+        document.querySelectorAll(".tab-button");
+
+
+    buttons.forEach(function(button) {
+
+        button.classList.remove("active");
+
+    });
+
+
+
+    /*
+       Display selected section
+    */
+
+    document
+        .getElementById(tabName)
+        .classList.add("active");
+
+
+
+    /*
+       Highlight selected button
+    */
+
+    clickedButton.classList.add("active");
+
+
+
+    /*
+       Scroll to top
+    */
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+
+/* =====================================================
+   PHOTO LIGHTBOX
+===================================================== */
+
+
+/*
+   Select all clickable photos
+*/
+
+const allPhotos =
+    document.querySelectorAll(
+        ".travel-card img, " +
+        ".creative-card img, " +
+        ".patient-photo img, " +
+        ".surgeon-photo img"
+    );
+
+
+
+/*
+   Add click event to every photo
+*/
+
+allPhotos.forEach(function(photo) {
+
+
+    photo.addEventListener("click", function() {
+
+
+        const lightbox =
+            document.getElementById(
+                "photoLightbox"
+            );
+
+
+        const lightboxImage =
+            document.getElementById(
+                "lightboxImage"
+            );
+
+
+        /*
+           Copy clicked photo
+           into the lightbox
+        */
+
+        lightboxImage.src =
+            this.src;
+
+
+        lightboxImage.alt =
+            this.alt;
+
+
+        /*
+           Display lightbox
+        */
+
+        lightbox.classList.add("show");
+
+
+        /*
+           Prevent page scrolling
+        */
+
+        document.body.style.overflow =
+            "hidden";
+
+    });
+
+});
+
+
+
+/*
+   Close lightbox
+*/
+
+function closeLightbox() {
+
+
+    const lightbox =
+        document.getElementById(
+            "photoLightbox"
+        );
+
+
+    lightbox.classList.remove("show");
+
+
+    /*
+       Allow page scrolling again
+    */
+
+    document.body.style.overflow =
+        "";
+
+}
+
+
+
+/*
+   Close by clicking
+   outside the photo
+*/
+
+document
+    .getElementById("photoLightbox")
+    .addEventListener(
+        "click",
+        function(event) {
+
+
+            if (
+                event.target === this
+            ) {
+
+                closeLightbox();
+
+            }
+
+        }
+    );
+
+
+
+/*
+   Close with ESC key
+*/
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+
+</script>
+
+
+</body>
+
+</html>
